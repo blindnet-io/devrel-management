@@ -1,0 +1,49 @@
+# issue form are only available on public repositories
+# remove request.md right before making this repo public
+# see https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
+name: Request
+description: "Make a wish :star2:"
+title: "[Request]: "
+labels: ["request", "triage"]
+assignees:
+  - noelmace
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contacting us! Make any request you want, and we'll do our best to help.
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: dropdown
+    id: type
+    attributes:
+      label: What is this request about?
+      multiple: true
+      options:
+        - Technical question
+        - Broad question
+        - Feature request
+        - Discuss something
+        - I wanna help
+        - I need some help
+        - Something else
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Tell us what's on your mind.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
