@@ -12,7 +12,7 @@ Steve is a health insurance app loved by digital natives who enjoy its user expe
 
 ## Context
 
-Gaining users' trust is a key element of success in commercialization of digital services.
+Gaining users' trust is a key factor of success in commercialization of digital services.
 Where a human salesman is absent, trust is achieved through technology.
 
 Privacy, giving users control over their data, and compliance with regulations are key drivers of trust online (cf. [research](#references)).
@@ -48,13 +48,13 @@ Whenever an important thing happens - a user opens an account, signs a contract 
 
 ```mermaid
 flowchart TD
-        A[Event: SERVICE-START] o--o C[LEGITIMATE-INTEREST data-category:CONTACT] o--o D[Consent 1w4b7] o--o E[Consent 23a1c6] o--o F[Privacy Request: REVOKE-CONSENT 1w4b70] o--o G[Privacy Request Response: REVOKE-CONSENT - GRANTED] o--o H[Privacy Request: DELETE data-category:CONTACT] o--o E[Privacy Request Response: DELETE - DENIED]
+        A[Event: SERVICE-START] o--o B[LEGITIMATE-INTEREST data-category:CONTACT] o--o C[Consent 1w4b7] o--o D[Consent 23a1c6] o--o E[Privacy Request: REVOKE-CONSENT 1w4b70] o--o F[Privacy Request Response: REVOKE-CONSENT - GRANTED] o--o G[Privacy Request: DELETE data-category:CONTACT] o--o H[Privacy Request Response: DELETE - DENIED]
 ```
 When a user makes a Privacy Request, the Privacy Compiler is able to resolve it against that state and deliver response recommendations or automatically issue responses.
 
 Even regardless of any user action, Privacy Compiler can spot data the retention policies of which have expired.
 
-<img style="float: right; max-height: 200px;" src="./img/prbuilder.png">
+<img align="right" height="200" src="./img/prbuilder.png">
 
 ### Step 3 - Replace the e-mail with Privacy Request Builder
 
