@@ -44,7 +44,7 @@ blindnet's PRIV (Privacy Request Interchange Vocabulary) is an easy-to use taxon
 
 ### Step 2 - Report key events
 
-Whenever an important thing happens - a user opens an account, signs a contract or cancels a subscription Steve lets blindnet devkit know. A chain of events is constructed. With every new event the blindnet's Privacy Compiler updates a state of allowed processing.
+Whenever an important thing happens - a user opens an account, signs a contract or cancels a subscription - Steve lets blindnet devkit know. A chain of events is constructed. With every new event the blindnet's Privacy Compiler updates a state of allowed processing.
 
 ```mermaid
 flowchart TD
@@ -54,9 +54,9 @@ When a user makes a Privacy Request, the Privacy Compiler is able to resolve it 
 
 Even regardless of any user action, Privacy Compiler can spot data the retention policies of which have expired.
 
-<img align="right" height="200" src="./img/prbuilder.png">
 
 ### Step 3 - Replace the e-mail with Privacy Request Builder
+<img align="right" height="200" src="./img/prbuilder.png">
 
 Finally, Steve can replace the **privacy@steveapp.com** with a convenient interface allowing users to make privacy requests.
 Many requests can be replied to immediately with no human intervention (e.g. Transparency requests).
@@ -67,6 +67,7 @@ Only requests not falling into any of the PRIV categories still require human in
 ## Result
 
 Thanks to blindnet devkit Steve can lower the costs of processing Privacy Requests.
+
 Complying with privacy regulation mandates becomes an opportunity to build trust and offer superior user experience consistent with the brand's values.
 
 ## Need more?
