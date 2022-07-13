@@ -2,7 +2,7 @@
 
 | **Author(s)** | [milstan](https://github.com/milstan) (milstan@blindnet.io)             |
 | :------------ | :------------------------------------------------------------------------------------- |
-| **PR**   | [TBD](TBD) |
+| **PR**   | [#49](https://github.com/blindnet-io/devrel-management/pull/49) |
 | **Version**   | 1.0                                                                             |
 | **Updated**   | 2022-07-13                                                                             |
 
@@ -36,25 +36,38 @@ Steve is perceived as secure, modern, efficient, transparent. In other words eve
 
 It takes three easy steps for Steve to include the most advanced privacy features in its existing software:
 
-## Step 1 - Configuration
+### Step 1 - Configuration
 
 Steve feeds blidnet devkit with general information (Privacy Policy, server locations, retention policies) and provides a mapping between data categories in its database and [PRIV](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) terms.
 
 blindnet's PRIV (Privacy Request Interchange Vocabulary) is an easy-to use taxonomy of tags - an entry point to the a whole world of automation. It allows to connect an existing system with blindnet's knowledge base and rule engines in oder to deliver the ultimate privacy experience.
 
-## Step 2 - Report key events
+### Step 2 - Report key events
 
-Whenever an important thing happens - a user opens an account, signs a contract or cancels subscription Steve lets blindnet devkit know. A chain of events is constructed.
+Whenever an important thing happens - a user opens an account, signs a contract or cancels a subscription Steve lets blindnet devkit know. A chain of events is constructed. With every new event the blindnet's Privacy Compiler updates a state of allowed processing.
 
 ```mermaid
 flowchart TD
-        A[Event: SERVICE-START] o--o C[LEGITIMATE-INTEREST data-category:CONTACT] o--o D[Consent 1w4b7] o--o E[Consent 23a1c6] o--o F[Privacy Request: REVOKE-CONSENT 1w4b70] o--o G[Privacy Request: DELETE data-category:CONTACT] o--o H[Privacy Request Response: DENIED]
-
+        A[Event: SERVICE-START] o--o C[LEGITIMATE-INTEREST data-category:CONTACT] o--o D[Consent 1w4b7] o--o E[Consent 23a1c6] o--o F[Privacy Request: REVOKE-CONSENT 1w4b70] o--o G[Privacy Request Response: REVOKE-CONSENT - GRANTED] o--o H[Privacy Request: DELETE data-category:CONTACT] o--o E[Privacy Request Response: DELETE - DENIED]
 ```
+When a user makes a Privacy Request, the Privacy Compiler is able to resolve it against that state and deliver response recommendations or automatically issue responses.
 
-## Step 3 - Replace **privacy@steveapp.com** with Privacy Request Builder
+Even regardless of any user action, Privacy Compiler can spot data the retention policies of which have expired.
+
 <img style="float: right; max-height: 200px;" src="./img/prbuilder.png">
 
+### Step 3 - Replace the e-mail with Privacy Request Builder
+
+Finally, Steve can replace the **privacy@steveapp.com** with a convenient interface allowing users to make privacy requests.
+Many requests can be replied to immediately with no human intervention (e.g. Transparency requests).
+In some cases Privacy Complier can be configured to only deliver response recommendations, subject to human validation.
+
+Only requests not falling into any of the PRIV categories still require human intervention.
+
+## Result
+
+Thanks to blindnet devkit Steve can lower the costs of processing Privacy Requests.
+Complying with privacy regulation mandates becomes an opportunity to build trust and offer superior user experience consistent with the brand's values.
 
 ## Need more?
 
