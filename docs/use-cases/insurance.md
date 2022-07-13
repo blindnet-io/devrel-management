@@ -53,7 +53,7 @@ flowchart TD
 ```
 
 ## Step 3 - Replace **privacy@steveapp.com** with Privacy Request Builder
-<img style="float: right;" src="./img/prbuilder.md">
+<img style="float: right; max-height: 200px;" src="./img/prbuilder.png">
 
 
 ## Need more?
