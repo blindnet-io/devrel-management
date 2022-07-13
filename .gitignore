@@ -38,3 +38,6 @@ node_modules/
 
 # Markdown
 *.backup
+
+# Mac
+.DS_Store
