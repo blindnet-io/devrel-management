@@ -2,7 +2,7 @@
 
 | **Author(s)** | [milstan](https://github.com/milstan) (milstan@blindnet.io)             |
 | :------------ | :------------------------------------------------------------------------------------- |
-| **PR**   | [TBD](TBD) |
+| **PR**   | [54](https://github.com/blindnet-io/devrel-management/pull/54) |
 | **Version**   | 1.0                               |
 | **Updated**   | 2022-07-15                        |
 
@@ -51,9 +51,8 @@ In addition, multiple privacy-related regulations, including GDPR, impose lettin
 
 FormType is a great solution for collecting data. However clients are left on their own when it comes to letting their users make Privacy Requests related to that data.
 
-Users often put in place an e-mail of the type **dpo@example.com**. The practice poses several issues:
-- **It involves a lot of human effort.** When requests are made, they log in to FormType and manually change or modify data.
-Sometimes it takes them time to determine whether the data must be kept for regulatory reasons even despite the users delete request.
+Clients often put in place an e-mail for request (e.g. **dpo@example.com**). The practice poses several issues:
+- **It involves a lot of human effort.** When requests are made, a human must evaluate whether the user's request can/should be granted with regards to multiple constrains (often data must be kept for compliance with regulation).
 - **It only offers limited compliance**. It is clearly much more difficult to revoke consent in this way than it is to give one within the FormType experience.
 - **It breaks away from the promise of FormType**. The clients expect FormType to offer a turn-key solution for user-friendly, simple experience around data collection.
 
