@@ -44,17 +44,13 @@ blindnet's PRIV (Privacy Request Interchange Vocabulary) is an easy-to-use taxon
 
 ### Step 2 - Report key events
 
-Whenever an important thing happens - a user opens an account, signs a contract or cancels a subscription - Steve lets blindnet devkit know. A chain of events is constructed. With every new event the blindnet's Privacy Compiler updates a state of allowed processing.
-
-```mermaid
-flowchart TD
-        A[Event: SERVICE-START] o--o B[LEGITIMATE-INTEREST data-category:CONTACT] o--o C[Consent 1w4b7] o--o D[Consent 23a1c6] o--o E[Privacy Request: REVOKE-CONSENT 1w4b70] o--o F[Privacy Request Response: REVOKE-CONSENT - GRANTED] o--o G[Privacy Request: DELETE data-category:CONTACT] o--o H[Privacy Request Response: DELETE - DENIED]
-```
-When a user makes a Privacy Request, the Privacy Compiler is able to resolve it against that state and deliver response recommendations or automatically issue responses.
+Whenever an important thing happens - a user opens an account, signs a contract or cancels a subscription - Steve lets blindnet devkit know. A chain of events is constructed. With every new event the blindnet's Privacy Compiler (part of Privacy Computation Engine) updates a state of allowed processing.
 
 <img height="300" src="./img/PCEexplained.gif">
 
-Even regardless of any user action, Privacy Compiler can spot data the retention policies of which have expired.
+When a user makes a Privacy Request, the Privacy Computation Engine is able to resolve it against that state and deliver response recommendations or automatically issue responses.
+
+Even regardless of any user action, Privacy Computation Engine can spot data the retention policies of which have expired.
 
 
 ### Step 3 - Replace the e-mail with Privacy Request Builder
