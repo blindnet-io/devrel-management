@@ -11,15 +11,17 @@
 
 ## Context
 
-Companies are under pressure of privacy regulations. They must now offer users a certain degree of transparency and control over how their data are processed. BigID offers advanced solutions for [cataloging legacy data](https://bigid.com/discovery-in-depth/), intake of [Privacy Requests](https://bigid.com/privacy/privacy-portal-app/) and [workflow automation of Privacy Request fulfillment](https://bigid.com/privacy/data-rights-automation-app/).
+Companies are under pressure from privacy regulations. They must now offer users a certain degree of transparency and control over how their data is processed. BigID offers advanced solutions for [cataloging legacy data](https://bigid.com/discovery-in-depth/), intake of [Privacy Requests](https://bigid.com/privacy/privacy-portal-app/) and [workflow automation of Privacy Request fulfillment](https://bigid.com/privacy/data-rights-automation-app/).
 
 ## A Step Beyond
 
 BigID can offer an even more advanced service by offering an out-of-the box automation of Privacy Request fulfillment.
 
-blindnet has developed [PRIV (Privacy Request Interchange Vocabulary)](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) is an easy-to-use taxonomy of tags - an entry point to the a whole world of automation.
+blindnet has developed [PRIV (Privacy Request Interchange Vocabulary)](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md). It is an easy-to-use taxonomy of tags - entry point to the a whole world of automation.
 It allows to connect an existing system with blindnet's knowledge base and rule engines in oder to deliver the ultimate privacy experience.
 
+PRIV associates simple tags with rich semantics.
+As such they enable next-generation artificial intelligence.
 Thanks to PRIV tags, blindnet's Privacy Computation engine can leverage regulation-specific rule bases in order to decide, given a Privacy Request, if it is legal to decline it or not.
 
 ## Using blidnet DevKit
@@ -42,7 +44,9 @@ A chain of events is constructed and updated whenever an important thing happens
 
 <img height="300" src="./img/PCEexplained.gif">
 
-When a user makes a Privacy Request, the Privacy Computation Engine is able to resolve it against that state and deliver response recommendations or automatically issue responses.
+When a user makes a Privacy Request, the Privacy Computation Engine is able to resolve it against that state and deliver Privacy Request Response recommendations.
+
+Those responses too, become a part of the chain of immutable PRIV events - a solid ground for history review and proof of compliance.
 
 ### Step 3 - Offer Out-of-the-box Automation and Response Recommendations
 
