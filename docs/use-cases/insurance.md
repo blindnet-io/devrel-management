@@ -52,7 +52,7 @@ flowchart TD
 ```
 When a user makes a Privacy Request, the Privacy Compiler is able to resolve it against that state and deliver response recommendations or automatically issue responses.
 
-<img align="right" height="200" src="./img/PCEExplained.gif">
+<img align="right" height="200" src="./img/PCEexplained.gif">
 
 Even regardless of any user action, Privacy Compiler can spot data the retention policies of which have expired.
 
