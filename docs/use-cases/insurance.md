@@ -58,7 +58,7 @@ Even regardless of any user action, Privacy Computation Engine can spot data the
 
 Finally, Steve can replace the **privacy@steveapp.com** with a convenient interface allowing users to make privacy requests.
 Many requests can be replied to immediately with no human intervention (e.g. Transparency requests).
-In some cases Privacy Complier can be configured to only deliver response recommendations, subject to human validation.
+In some cases Privacy Computation Engine can be configured to only deliver response recommendations, subject to human validation.
 
 Only requests not falling into any of the PRIV categories still require human intervention.
 
