@@ -2,7 +2,6 @@
 
 | **Author(s)** | [milstan](https://github.com/milstan) (milstan@blindnet.io)             |
 | :------------ | :------------------------------------------------------------------------------------- |
-| **PR**   | [54](https://github.com/blindnet-io/devrel-management/pull/54) |
 | **Version**   | 1.0                               |
 | **Updated**   | 2022-07-15                        |
 
