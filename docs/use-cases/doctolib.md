@@ -22,7 +22,7 @@ Privacy, giving users control over their data, and compliance with regulations a
 
 Currently, if users what to take control over their data, restrict its processing or exercise their rights (granted by GDPR, CCPA or other regulations) they are expected to write an e-mail to **contact.dataprivacy@doctolib.com** (or write paper mail to Doctolib's DPO).
 
-This is problematic on several levels:
+This poses several difficulties:
 - **E-mail is not secure.**
 Users might end-up disclosing confidential or health-related information over e-mail which would be a direct violation of [Article 32 of GDPR](https://gdpr-info.eu/art-32-gdpr/), heavily sanctioned by most major in the EU.
 
@@ -41,13 +41,13 @@ It takes three easy steps for Doctolib to include the most advanced privacy feat
 
 ### Step 1 - Configuration
 
-Doctolib feeds blidnet devkit with general information (Privacy Policy, server locations, retention policies) and provides a mapping between data categories in its database and [PRIV](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) terms.
+Doctolib should feed blidnet devkit with general information (Privacy Policy, server locations, retention policies) and provides a mapping between data categories in its database and [PRIV](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) terms.
 
 blindnet's PRIV (Privacy Request Interchange Vocabulary) is an easy-to-use taxonomy of tags - an entry point to the a whole world of automation. It allows to connect an existing system with blindnet's knowledge base and rule engines in oder to deliver the ultimate privacy experience.
 
 ### Step 2 - Report key events
 
-Whenever an important thing happens - a user opens an account, gives consent, or deletes an account - Doctolib lets blindnet devkit know. A chain of events is constructed. With every new event the blindnet's Privacy Compiler (part of Privacy Computation Engine) updates a state of allowed processing.
+Whenever an important thing happens - a user opens an account, gives consent, or deletes an account - Doctolib should let blindnet devkit know. A chain of events is constructed. With every new event the blindnet's Privacy Compiler (part of Privacy Computation Engine) updates a state of allowed processing.
 
 <img height="300" src="./img/PCEexplained.gif">
 
@@ -57,7 +57,7 @@ Even regardless of any user action, Privacy Computation Engine can spot data the
 
 
 ### Step 3 - Replace the e-mail with Privacy Request Builder
-<img align="right" height="200" src="./img/prbuilder.png">
+<img align="right" height="200" src="./img/loglolessPRbuilder.png">
 
 Finally, Doctolib can replace the **contact.dataprivacy@doctolib.com** with a convenient interface allowing users to make privacy requests.
 Many requests can be replied to immediately with no human intervention (e.g. Transparency requests).
@@ -67,7 +67,7 @@ Only requests not falling into any of the PRIV categories still require human in
 
 ## Result
 
-Thanks to blindnet devkit Doctolib can lower the costs of processing Privacy Requests.
+Thanks to blindnet devkit Doctolib can lower the costs of processing Privacy Requests and improve user experience.
 
 Complying with privacy regulation mandates becomes an opportunity to build trust and offer superior user experience consistent with the brand's values.
 

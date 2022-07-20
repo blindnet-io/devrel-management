@@ -21,7 +21,7 @@ Currently, if users what to take control over their data, restrict its processin
 
 Within that form, the user is expected to describe their demand in their own words in the field "Description de la demande" and are encouraged to give as much detail as possible (fr. "Veuillez donner un maximum d'informations à propos de votre problème. Cela nous aidera à le résoudre plus rapidement.")
 
-This is problematic on several levels:
+This poses several difficulties:
 - **It is difficult to automate responses to Privacy Requests**.
 Expressed in the form of free text, a Privacy Request must be read and processed by a human, which is cost-intense and slow.
 
@@ -34,20 +34,20 @@ It takes three easy steps for Deezer to include the most advanced privacy featur
 
 ### Step 1 - Configuration
 
-Deezer feeds blidnet devkit with general information (Privacy Policy, server locations, retention policies) and provides a mapping between data categories in its database and [PRIV](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) terms.
+Deezer should feed blidnet devkit with general information (Privacy Policy, server locations, retention policies) and provides a mapping between data categories in its database and [PRIV](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) terms.
 
 blindnet's PRIV (Privacy Request Interchange Vocabulary) is an easy-to-use taxonomy of tags - an entry point to the a whole world of automation. It allows to connect an existing system with blindnet's knowledge base and rule engines in oder to deliver the ultimate privacy experience.
 
 ### Step 2 - Report key events
 
-Whenever an important thing happens - a user opens an account, gives consent, closes an account, etc. - Deezer lets blindnet devkit know. A chain of events is constructed. With every new event the blindnet's Privacy Compiler (part of Privacy Computation Engine) updates a state of allowed processing.
+Whenever an important thing happens - a user opens an account, gives consent, closes an account, etc. - Deezer should let blindnet devkit know. A chain of events is constructed. With every new event the blindnet's Privacy Compiler (part of Privacy Computation Engine) updates a state of allowed processing.
 
 <img height="300" src="./img/PCEexplained.gif">
 
 When a user makes a Privacy Request, the Privacy Computation Engine is able to resolve it against that state and deliver response recommendations or automatically issue responses.
 
 ### Step 3 - Replace the current web form with Privacy Request Builder
-<img align="right" height="200" src="./img/prbuilder.png">
+<img align="right" height="200" src="./img/loglolessPRbuilder.png">
 
 Finally, Deezer can replace the current text-field in the contact form, with a convenient interface (part of blindnet DevKit) allowing users to make Privacy Requests.
 
@@ -56,7 +56,7 @@ In some cases Privacy Computation Engine can be configured to only deliver respo
 
 ## Result
 
-Thanks to blindnet devkit Deezer can lower the costs of processing Privacy Requests and improve the user experience and users trust.
+Thanks to blindnet devkit Deezer can lower the costs of processing Privacy Requests and improve the user experience and further solidify users' trust.
 
 Captured using PRIV Terms, Privacy Request can be processed automatically - certain yielding immediate answer.
 
