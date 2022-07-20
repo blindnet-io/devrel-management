@@ -24,7 +24,7 @@ Currently, if users what to take control over their data, restrict its processin
 
 This poses several difficulties:
 - **E-mail is not secure.**
-Users might end-up disclosing confidential or health-related information over e-mail which would be a direct violation of [Article 32 of GDPR](https://gdpr-info.eu/art-32-gdpr/), heavily sanctioned by most major in the EU.
+Users might end-up disclosing confidential or health-related information over e-mail which would be a direct violation of [Article 32 of GDPR](https://gdpr-info.eu/art-32-gdpr/), heavily sanctioned by most countries in the EU.
 
 - **Requests are difficult to automate**.
 Expressed in the form of free text of an e-mail, Privacy Request must be read and processed by a human, which is cost-intense and slow.
