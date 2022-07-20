@@ -1,13 +1,13 @@
-# blindnet devkit for Digital Insurance Apps
+# blindnet devkit for E-commerce Websites
 
 | **Author(s)** | [milstan](https://github.com/milstan) (milstan@blindnet.io)             |
 | :------------ | :------------------------------------------------------------------------------------- |
 | **Version**   | 1.0                                                                             |
 | **Updated**   | 2022-07-13                                                                             |
 
-## Client Profile : Steve
+## Client Profile : PrivateCommerce
 
-Steve is an insurance app loved by digital natives who enjoy its user experience and simplicity.
+PrivateCommerce is private sale e-commerce website, popular for their discount sales of high-end goods.
 
 ## Context
 
@@ -18,7 +18,7 @@ Privacy, giving users control over their data, and compliance with regulations a
 
 ## Current Situation
 
-Currently, if users what to take control over their data, restrict its processing or exercise their rights (granted by GDPR, CCPA or other regulations) they are expected to write an e-mail to **privacy@steveapp.com**.
+Currently, if users what to take control over their data, restrict its processing or exercise their rights (granted by GDPR, CCPA or other regulations) they are expected to write an e-mail to **privacy@privatecommerce.com**.
 
 This is problematic on several levels:
 - **E-mail is not secure.**
@@ -26,24 +26,24 @@ Users might end-up disclosing confidential, health-related or sensitive informat
 
 - **Requests are difficult to automate**.
 Expressed in the form of free text of an e-mail, Privacy Request must be read and processed by a human, which is cost-intense and slow.
-Linking the Requests and the responses to the actual data that Steve has is very cumbersome and requires software development involving many components of the Steve backend system.
+Linking the Requests and the responses to the actual data that PrivateCommerce has is very cumbersome and requires software development involving many components of the PrivateCommerce backend system.
 
 - **It is out of sync with the values of the brand**.
-Steve is perceived as secure, modern, efficient, transparent. In other words everything this experience is not.
+PrivateCommerce is perceived as secure, modern, efficient, transparent. In other words everything this experience is not.
 
 ## Using blidnet devkit
 
-It takes three easy steps for Steve to include the most advanced privacy features in its existing software:
+It takes three easy steps for PrivateCommerce to include the most advanced privacy features in its existing software:
 
 ### Step 1 - Configuration
 
-Steve feeds blidnet devkit with general information (Privacy Policy, server locations, retention policies) and provides a mapping between data categories in its database and [PRIV](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) terms.
+PrivateCommerce feeds blidnet devkit with general information (Privacy Policy, server locations, retention policies) and provides a mapping between data categories in its database and [PRIV](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) terms.
 
 blindnet's PRIV (Privacy Request Interchange Vocabulary) is an easy-to-use taxonomy of tags - an entry point to the a whole world of automation. It allows to connect an existing system with blindnet's knowledge base and rule engines in oder to deliver the ultimate privacy experience.
 
 ### Step 2 - Report key events
 
-Whenever an important thing happens - a user opens an account, signs a contract or cancels a subscription - Steve lets blindnet devkit know. A chain of events is constructed. With every new event the blindnet's Privacy Compiler (part of Privacy Computation Engine) updates a state of allowed processing.
+Whenever an important thing happens - a user opens an account, signs a contract or cancels a subscription - PrivateCommerce lets blindnet devkit know. A chain of events is constructed. With every new event the blindnet's Privacy Compiler (part of Privacy Computation Engine) updates a state of allowed processing.
 
 <img height="300" src="./img/PCEexplained.gif">
 
@@ -53,9 +53,9 @@ Even regardless of any user action, Privacy Computation Engine can spot data the
 
 
 ### Step 3 - Replace the e-mail with Privacy Request Builder
-<img align="right" height="200" src="./img/prbuilder.png">
+<img align="right" height="200" src="./img/loglolessPRbuilder.png">
 
-Finally, Steve can replace the **privacy@steveapp.com** with a convenient interface allowing users to make privacy requests.
+Finally, PrivateCommerce can replace the  **privacy@privatecommerce.com** with a convenient interface allowing users to make privacy requests.
 Many requests can be replied to immediately with no human intervention (e.g. Transparency requests).
 In some cases Privacy Computation Engine can be configured to only deliver response recommendations, subject to human validation.
 
@@ -63,7 +63,7 @@ Only requests not falling into any of the PRIV categories still require human in
 
 ## Result
 
-Thanks to blindnet devkit Steve can lower the costs of processing Privacy Requests.
+Thanks to blindnet devkit PrivateCommerce can lower the costs of processing Privacy Requests.
 
 Complying with privacy regulation mandates becomes an opportunity to build trust and offer superior user experience consistent with the brand's values.
 
