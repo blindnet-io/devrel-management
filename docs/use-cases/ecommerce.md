@@ -22,7 +22,7 @@ Currently, if users what to take control over their data, restrict its processin
 
 This is problematic on several levels:
 - **E-mail is not secure.**
-Users might end-up disclosing confidential, health-related or sensitive information over e-mail which would be a direct violation of [Article 32 of GDPR](https://gdpr-info.eu/art-32-gdpr/), heavily sanctioned by most major in the EU.
+Users might end-up disclosing confidential, health-related or sensitive information over e-mail which would be a direct violation of [Article 32 of GDPR](https://gdpr-info.eu/art-32-gdpr/), heavily sanctioned by most countries in the EU.
 
 - **Requests are difficult to automate**.
 Expressed in the form of free text of an e-mail, Privacy Request must be read and processed by a human, which is cost-intense and slow.
@@ -73,6 +73,10 @@ blindnet devkit does much more. It is a complete solution for [privacy-enabled c
 
 - *Working with sensitive data?* Offer end-to-end encryption using [blidnent's encryption services](https://github.com/blindnet-io/api-scala)
 - *Sharing Data with partners?* Propagate users' Privacy Requests using blindnet's [Privacy Request Multicast Protocol](https://github.com/blindnet-io/product-management/blob/b7d2bd0aab509a5d83ed42822b0ba19e27bef905/refs/schemas/protocols/RFC-PRMP.md)
+
+## See also
+
+- [blindnet DevKit Feature Roadmap Q3 & Q4 2022](https://github.com/blindnet-io/devrel-management/blob/main/docs/roadmap/q3-2022.md)
 
 ## References
 
