@@ -1,13 +1,13 @@
 # blindnet DevKit for Doctolib
 
-| **Author(s)** | [milstan](https://github.com/milstan) (milstan@blindnet.io)             |
-| :------------ | :------------------------------------------------------------------------------------- |
-| **Version**   | 1.0                                                                             |
-| **Updated**   | 2022-07-19                                                                             |
+| **Author(s)** | [milstan](https://github.com/milstan) (milstan@blindnet.io) |
+| :------------ | :---------------------------------------------------------- |
+| **Version**   | 1.1                                                         |
+| **Updated**   | 2022-07-21                                                  |
 
 ## About Doctolib
 
-Doctolib is a medical appointment management system trusted by more then 100.000 doctors who use it a a primary means of communication with their patients.
+Doctolib is a medical appointment management system trusted by more than 100 000 doctors who use it a primary means of communication with their patients.
 
 Doctolib takes patient privacy very seriously. End-to-end encrypted file exchange (powered by Tanker, a startup that Doctolib acquired) is at the heart of this strategy.
 
@@ -23,17 +23,18 @@ Privacy, giving users control over their data, and compliance with regulations a
 Currently, if users what to take control over their data, restrict its processing or exercise their rights (granted by GDPR, CCPA or other regulations) they are expected to write an e-mail to **contact.dataprivacy@doctolib.com** (or write paper mail to Doctolib's DPO).
 
 This poses several difficulties:
+
 - **E-mail is not secure.**
-Users might end-up disclosing confidential or health-related information over e-mail which would be a direct violation of [Article 32 of GDPR](https://gdpr-info.eu/art-32-gdpr/), heavily sanctioned by most countries in the EU.
+  Users might end-up disclosing confidential or health-related information over e-mail which would be a direct violation of [Article 32 of GDPR](https://gdpr-info.eu/art-32-gdpr/), heavily sanctioned by most countries in the EU.
 
 - **Requests are difficult to automate**.
-Expressed in the form of free text of an e-mail, Privacy Request must be read and processed by a human, which is cost-intense and slow.
-Linking the Requests and the responses to the actual data that Doctolib has is very cumbersome and requires software development involving many components of the Doctolib backend system.
+  Expressed in the form of free text of an e-mail, Privacy Request must be read and processed by a human, which is cost-intense and slow.
+  Linking the Requests and the responses to the actual data that Doctolib has is very cumbersome and requires software development involving many components of the Doctolib backend system.
 
 - **It is out of sync with the values of the brand**.
-Doctolib is perceived as secure, modern, and efficient. In other words: everything this experience is not.
+  Doctolib is perceived as secure, modern, and efficient. In other words: everything this experience is not.
 
-## Using blidnet devkit
+## Using blindnet devkit
 
 blindnet devkit is a complete solution for [privacy-enabled connectedness](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/notion-of-privacy.md), allowing developers to quickly gain ground on all of the three pillars of privacy: [Transparency, Confidentiality and Control](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/principles/RFC-SPEP.md).
 
@@ -41,9 +42,9 @@ It takes three easy steps for Doctolib to include the most advanced privacy feat
 
 ### Step 1 - Configuration
 
-Doctolib should feed blidnet devkit with general information (Privacy Policy, server locations, retention policies) and provides a mapping between data categories in its database and [PRIV](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) terms.
+Doctolib should feed blindnet devkit with general information (Privacy Policy, server locations, retention policies) and provides a mapping between data categories in its database and [PRIV](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) terms.
 
-blindnet's PRIV (Privacy Request Interchange Vocabulary) is an easy-to-use taxonomy of tags - an entry point to the a whole world of automation. It allows to connect an existing system with blindnet's knowledge base and rule engines in oder to deliver the ultimate privacy experience.
+blindnet's PRIV (Privacy Request Interchange Vocabulary) is an easy-to-use taxonomy of tags - an entry point to the whole world of automation. It allows to connect an existing system with blindnet's knowledge base and rule engines in order to deliver the ultimate privacy experience.
 
 ### Step 2 - Report key events
 
@@ -55,8 +56,8 @@ When a user makes a Privacy Request, the Privacy Computation Engine is able to r
 
 Even regardless of any user action, Privacy Computation Engine can spot data the retention policies of which have expired.
 
-
 ### Step 3 - Replace the e-mail with Privacy Request Builder
+
 <img align="right" height="200" src="./img/loglolessPRbuilder.png">
 
 Finally, Doctolib can replace the **contact.dataprivacy@doctolib.com** with a convenient interface allowing users to make privacy requests.

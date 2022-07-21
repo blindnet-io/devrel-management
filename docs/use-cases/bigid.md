@@ -1,9 +1,9 @@
 # blindnet DevKit for BigId
 
-| **Author(s)** | [milstan](https://github.com/milstan) (milstan@blindnet.io)             |
-| :------------ | :------------------------------------------------------------------------------------- |
-| **Version**   | 1.0                                                                             |
-| **Updated**   | 2022-07-18                                                                             |
+| **Author(s)** | [milstan](https://github.com/milstan) (milstan@blindnet.io) |
+| :------------ | :---------------------------------------------------------- |
+| **Version**   | 1.1                                                         |
+| **Updated**   | 2022-07-21                                                  |
 
 ## About BigId
 
@@ -17,20 +17,21 @@ Companies are under pressure from privacy regulations. They must now offer users
 
 BigID can offer an even more advanced service by offering an out-of-the box automation of Privacy Request fulfillment.
 
-blindnet has developed [PRIV (Privacy Request Interchange Vocabulary)](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md). It is an easy-to-use taxonomy of tags - entry point to the a whole world of automation.
-It allows to connect an existing system with blindnet's knowledge base and rule engines in oder to deliver the ultimate privacy experience.
+blindnet has developed [PRIV (Privacy Request Interchange Vocabulary)](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md). It is an easy-to-use taxonomy of tags - entry point to the whole world of automation.
+It allows to connect an existing system with blindnet's knowledge base and rule engines in order to deliver the ultimate privacy experience.
 
 PRIV associates simple tags with rich semantics.
 As such they enable next-generation artificial intelligence.
 Thanks to PRIV tags, blindnet's Privacy Computation engine can leverage regulation-specific rule bases in order to decide, given a Privacy Request, if it is legal to decline it or not.
 
-## Using blidnet DevKit
+## Using blindnet DevKit
 
 It takes three easy steps for BigID to include the most advanced privacy automation from blindnet DevKit in its existing software:
 
 ### Step 1 - Mappings to PRIV
 
 Several of BigID's components should be given mappings of the data structures they use to [PRIV](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) terms:
+
 - Categories coming out of [BigID's Data Classifier](https://bigid.com/data-classification/) should be mapped to PRIV Data Categories
 - [BigID's RoPA Mapping App](https://bigid.com/privacy/ropa-mapping-app/) should export the RoPA using PRIV's Processing Categories and Purposes
 - [BigID's Consent Governance App](https://bigid.com/privacy/consent-governance-app/) should be able to export consent data as PRIV Consents
@@ -38,7 +39,7 @@ Several of BigID's components should be given mappings of the data structures th
 
 ### Step 2 - Report Settings/Configuration and key events
 
-RoPA and similar general information should be fed to blindnet DevKit. Then, on an ongoing basis, all important events (in format of PRIV Events, such as PRIV Consent, PRIV Legal Base Event) should be fed to blidnet DevKit too.
+RoPA and similar general information should be fed to blindnet DevKit. Then, on an ongoing basis, all important events (in format of PRIV Events, such as PRIV Consent, PRIV Legal Base Event) should be fed to blindnet DevKit too.
 
 A chain of events is constructed and updated whenever an important thing happens. blindnet's Privacy Compiler (part of Privacy Computation Engine) processes the chain of events and updates a state of allowed processing.
 
@@ -56,12 +57,12 @@ BigID's Data Rights Automation App can act upon blindnet's Privacy Computation E
 
 ## Need more?
 
-blindnet DevKit does much more. It is a complete solution for [privacy-enabled connectedness](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/notion-of-privacy.md), allowing developers to quickly gain ground on all of the three pillars of privacy: [Transparency, Confidentiality and Control](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/principles/RFC-SPEP.md).
+blindnet DevKit does much more. It is a complete solution for [privacy-enabled connectedness](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/notion-of-privacy.md), allowing developers to quickly gain ground on all the three pillars of privacy: [Transparency, Confidentiality and Control](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/principles/RFC-SPEP.md).
 
-- *Working with sensitive data?* Offer end-to-end encryption using [blidnent's encryption services](https://github.com/blindnet-io/api-scala)
-- *Sharing Data with partners?* Propagate users' Privacy Requests using blindnet's [Privacy Request Multicast Protocol](https://github.com/blindnet-io/product-management/blob/b7d2bd0aab509a5d83ed42822b0ba19e27bef905/refs/schemas/protocols/RFC-PRMP.md)
+- _Working with sensitive data?_ Offer end-to-end encryption using [blindnet's encryption services](https://github.com/blindnet-io/api-scala)
+- _Sharing Data with partners?_ Propagate users' Privacy Requests using blindnet's [Privacy Request Multicast Protocol](https://github.com/blindnet-io/product-management/blob/b7d2bd0aab509a5d83ed42822b0ba19e27bef905/refs/schemas/protocols/RFC-PRMP.md)
 
 ## See also
 
 - [blindnet DevKit Feature Roadmap Q3 & Q4 2022](https://github.com/blindnet-io/devrel-management/blob/main/docs/roadmap/q3-2022.md)
-- [Blindnet's White Paper: The Mixed Feelings of Privacy. May 2022](../research/White-Paper-May-2022.pdf)
+- [blindnet's White Paper: The Mixed Feelings of Privacy. May 2022](../research/White-Paper-May-2022.pdf)
