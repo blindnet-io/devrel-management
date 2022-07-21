@@ -1,13 +1,13 @@
 # blindnet DevKit for Medical Communication solutions
 
-| **Author(s)** | [milstan](https://github.com/milstan) (milstan@blindnet.io)             |
-| :------------ | :------------------------------------------------------------------------------------- |
-| **Version**   | 1.0                                                                             |
-| **Updated**   | 2022-07-20                                                                             |
+| **Author(s)** | [milstan](https://github.com/milstan) (milstan@blindnet.io) |
+| :------------ | :---------------------------------------------------------- |
+| **Version**   | 1.1                                                         |
+| **Updated**   | 2022-07-21                                                  |
 
 ## Client Profile : MedCom
 
-MedCom is an software solution for medical communications loved by more then 200.000 healthcare professionals. It allows them to communicate with patients and colleagues in ways both practical and secure (compliant with regulations).
+MedCom is a software solution for medical communications loved by more than 200 000 healthcare professionals. It allows them to communicate with patients and colleagues in ways both practical and secure (compliant with regulations).
 
 ## Context
 
@@ -21,27 +21,28 @@ MedCom acts as a data processor in the sense of GDPR, collecting, generating and
 
 Doctors are liable to respond to Privacy Requests related to data stored in MedCom. E.g. a Patient may want to demand data modification, or deletion, or to restrict its processing to only certain purposes.
 
-The interaction around Privacy Requests happens outside of MedCom, usually by e-mail to the Doctor or to their DPO (if they have one).
+The interaction around Privacy Requests happens outside MedCom, usually by e-mail to the Doctor or to their DPO (if they have one).
 
 This is problematic on several levels:
+
 - **E-mail is not secure.**
-Patients might end-up disclosing confidential, health-related or sensitive information over e-mail which would be a direct violation of [Article 32 of GDPR](https://gdpr-info.eu/art-32-gdpr/), heavily sanctioned by most countries in the EU.
+  Patients might end-up disclosing confidential, health-related or sensitive information over e-mail which would be a direct violation of [Article 32 of GDPR](https://gdpr-info.eu/art-32-gdpr/), heavily sanctioned by most countries in the EU.
 
 - **Requests are tedious to process**.
-Expressed in the form of free text of an e-mail, Privacy Request must be read and processed by a human, which is cost-intense and slow.
+  Expressed in the form of free text of an e-mail, Privacy Request must be read and processed by a human, which is cost-intense and slow.
 
 - **If changes are to be made in MedCom, it must be done manually**.
-Linking the Requests and the responses to the actual data that MedCom has is very cumbersome and requires a human DPO processing a Privacy Request to log-in MedCom and manually apply any changes made necessary by Privacy Request in question.
+  Linking the Requests and the responses to the actual data that MedCom has is very cumbersome and requires a human DPO processing a Privacy Request to log-in MedCom and manually apply any changes made necessary by Privacy Request in question.
 
-## Using blidnet DevKit
+## Using blindnet DevKit
 
 It takes three easy steps for MedCom to include the most advanced Privacy Request processing features in its existing software, and offer a Privacy Center for Doctors and Patients, in full sync with the data in MedCom:
 
 ### Step 1 - Configuration
 
-MedCom feeds blidnet DevKit with general information (any Privacy Policy of the Employer, server locations, data retention policies) and provides a mapping between data categories in its database and [PRIV](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) terms.
+MedCom feeds blindnet DevKit with general information (any Privacy Policy of the Employer, server locations, data retention policies) and provides a mapping between data categories in its database and [PRIV](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) terms.
 
-blindnet's PRIV (Privacy Request Interchange Vocabulary) is an easy-to-use taxonomy of tags - an entry point to the a whole world of automation. It allows to connect an existing system with blindnet's knowledge base and rule engines in oder to deliver the ultimate privacy experience.
+blindnet's PRIV (Privacy Request Interchange Vocabulary) is an easy-to-use taxonomy of tags - an entry point to the whole world of automation. It allows to connect an existing system with blindnet's knowledge base and rule engines in order to deliver the ultimate privacy experience.
 
 ### Step 2 - Report key events
 
@@ -52,6 +53,7 @@ Whenever an important thing happens - a new Patient is known by the system, give
 When a Patient makes a Privacy Request, the Privacy Computation Engine is able to resolve it against that state and deliver response recommendations or automatically issue responses.
 
 ### Step 3 - Replace the e-mail with Privacy Request Builder
+
 <img align="right" height="200" src="./img/loglolessPRbuilder.png">
 
 Finally, MedCom can offer a nice user-friendly interface (provided in blindnet DevKit) allowing Patients to make privacy requests as a part of their MedCom experience.
@@ -69,10 +71,10 @@ Complying with privacy regulation mandates becomes an opportunity to build trust
 
 ## Need more?
 
-blindnet DevKit does much more. It is a complete solution for [privacy-enabled connectedness](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/notion-of-privacy.md), allowing developers to quickly gain ground on all of the three pillars of privacy: [Transparency, Confidentiality and Control](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/principles/RFC-SPEP.md).
+blindnet DevKit does much more. It is a complete solution for [privacy-enabled connectedness](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/notion-of-privacy.md), allowing developers to quickly gain ground on all the three pillars of privacy: [Transparency, Confidentiality and Control](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/principles/RFC-SPEP.md).
 
-- *Working with sensitive data?* Offer end-to-end encryption using [blidnent's encryption services](https://github.com/blindnet-io/api-scala).
-- *Sharing Data with partners?* Propagate users' Privacy Requests using blindnet's [Privacy Request Multicast Protocol](https://github.com/blindnet-io/product-management/blob/b7d2bd0aab509a5d83ed42822b0ba19e27bef905/refs/schemas/protocols/RFC-PRMP.md)
+- _Working with sensitive data?_ Offer end-to-end encryption using [blindnet's encryption services](https://github.com/blindnet-io/api-scala).
+- _Sharing Data with partners?_ Propagate users' Privacy Requests using blindnet's [Privacy Request Multicast Protocol](https://github.com/blindnet-io/product-management/blob/b7d2bd0aab509a5d83ed42822b0ba19e27bef905/refs/schemas/protocols/RFC-PRMP.md)
 
 ## See also
 

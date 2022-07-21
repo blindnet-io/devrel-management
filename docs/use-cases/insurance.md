@@ -1,9 +1,9 @@
 # blindnet devkit for Digital Insurance Apps
 
-| **Author(s)** | [milstan](https://github.com/milstan) (milstan@blindnet.io)             |
-| :------------ | :------------------------------------------------------------------------------------- |
-| **Version**   | 1.0                                                                             |
-| **Updated**   | 2022-07-13                                                                             |
+| **Author(s)** | [milstan](https://github.com/milstan) (milstan@blindnet.io) |
+| :------------ | :---------------------------------------------------------- |
+| **Version**   | 1.1                                                         |
+| **Updated**   | 2022-07-21                                                  |
 
 ## Client Profile : Steve
 
@@ -21,25 +21,26 @@ Privacy, giving users control over their data, and compliance with regulations a
 Currently, if users what to take control over their data, restrict its processing or exercise their rights (granted by GDPR, CCPA or other regulations) they are expected to write an e-mail to **privacy@steveapp.com**.
 
 This is problematic on several levels:
+
 - **E-mail is not secure.**
-Users might end-up disclosing confidential, health-related or sensitive information over e-mail which would be a direct violation of [Article 32 of GDPR](https://gdpr-info.eu/art-32-gdpr/), heavily sanctioned by most countries in the EU.
+  Users might end-up disclosing confidential, health-related or sensitive information over e-mail which would be a direct violation of [Article 32 of GDPR](https://gdpr-info.eu/art-32-gdpr/), heavily sanctioned by most countries in the EU.
 
 - **Requests are difficult to automate**.
-Expressed in the form of free text of an e-mail, Privacy Request must be read and processed by a human, which is cost-intense and slow.
-Linking the Requests and the responses to the actual data that Steve has is very cumbersome and requires software development involving many components of the Steve backend system.
+  Expressed in the form of free text of an e-mail, Privacy Request must be read and processed by a human, which is cost-intense and slow.
+  Linking the Requests and the responses to the actual data that Steve has is very cumbersome and requires software development involving many components of the Steve backend system.
 
 - **It is out of sync with the values of the brand**.
-Steve is perceived as secure, modern, efficient, transparent. In other words everything this experience is not.
+  Steve is perceived as secure, modern, efficient, transparent. In other words everything this experience is not.
 
-## Using blidnet devkit
+## Using blindnet devkit
 
 It takes three easy steps for Steve to include the most advanced privacy features in its existing software:
 
 ### Step 1 - Configuration
 
-Steve feeds blidnet devkit with general information (Privacy Policy, server locations, retention policies) and provides a mapping between data categories in its database and [PRIV](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) terms.
+Steve feeds blindnet devkit with general information (Privacy Policy, server locations, retention policies) and provides a mapping between data categories in its database and [PRIV](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) terms.
 
-blindnet's PRIV (Privacy Request Interchange Vocabulary) is an easy-to-use taxonomy of tags - an entry point to the a whole world of automation. It allows to connect an existing system with blindnet's knowledge base and rule engines in oder to deliver the ultimate privacy experience.
+blindnet's PRIV (Privacy Request Interchange Vocabulary) is an easy-to-use taxonomy of tags - an entry point to the whole world of automation. It allows to connect an existing system with blindnet's knowledge base and rule engines in order to deliver the ultimate privacy experience.
 
 ### Step 2 - Report key events
 
@@ -51,8 +52,8 @@ When a user makes a Privacy Request, the Privacy Computation Engine is able to r
 
 Even regardless of any user action, Privacy Computation Engine can spot data the retention policies of which have expired.
 
-
 ### Step 3 - Replace the e-mail with Privacy Request Builder
+
 <img align="right" height="200" src="./img/prbuilder.png">
 
 Finally, Steve can replace the **privacy@steveapp.com** with a convenient interface allowing users to make privacy requests.
@@ -69,10 +70,10 @@ Complying with privacy regulation mandates becomes an opportunity to build trust
 
 ## Need more?
 
-blindnet devkit does much more. It is a complete solution for [privacy-enabled connectedness](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/notion-of-privacy.md), allowing developers to quickly gain ground on all of the three pillars of privacy: [Transparency, Confidentiality and Control](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/principles/RFC-SPEP.md).
+blindnet devkit does much more. It is a complete solution for [privacy-enabled connectedness](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/notion-of-privacy.md), allowing developers to quickly gain ground on all the three pillars of privacy: [Transparency, Confidentiality and Control](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/principles/RFC-SPEP.md).
 
-- *Working with sensitive data?* Offer end-to-end encryption using [blidnent's encryption services](https://github.com/blindnet-io/api-scala)
-- *Sharing Data with partners?* Propagate users' Privacy Requests using blindnet's [Privacy Request Multicast Protocol](https://github.com/blindnet-io/product-management/blob/b7d2bd0aab509a5d83ed42822b0ba19e27bef905/refs/schemas/protocols/RFC-PRMP.md)
+- _Working with sensitive data?_ Offer end-to-end encryption using [blindnet's encryption services](https://github.com/blindnet-io/api-scala)
+- _Sharing Data with partners?_ Propagate users' Privacy Requests using blindnet's [Privacy Request Multicast Protocol](https://github.com/blindnet-io/product-management/blob/b7d2bd0aab509a5d83ed42822b0ba19e27bef905/refs/schemas/protocols/RFC-PRMP.md)
 
 ## References
 

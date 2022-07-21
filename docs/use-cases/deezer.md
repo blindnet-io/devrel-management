@@ -1,9 +1,9 @@
 # blindnet DevKit for Deezer
 
-| **Author(s)** | [milstan](https://github.com/milstan) (milstan@blindnet.io)             |
-| :------------ | :------------------------------------------------------------------------------------- |
-| **Version**   | 1.0                                                                             |
-| **Updated**   | 2022-07-19                                                           |
+| **Author(s)** | [milstan](https://github.com/milstan) (milstan@blindnet.io) |
+| :------------ | :---------------------------------------------------------- |
+| **Version**   | 1.1                                                         |
+| **Updated**   | 2022-07-21                                                  |
 
 ## About Deezer
 
@@ -22,13 +22,14 @@ Currently, if users what to take control over their data, restrict its processin
 Within that form, the user is expected to describe their demand in their own words in the field "Description de la demande" and are encouraged to give as much detail as possible (fr. "Veuillez donner un maximum d'informations à propos de votre problème. Cela nous aidera à le résoudre plus rapidement.")
 
 This poses several difficulties:
+
 - **It is difficult to automate responses to Privacy Requests**.
-Expressed in the form of free text, a Privacy Request must be read and processed by a human, which is cost-intense and slow.
+  Expressed in the form of free text, a Privacy Request must be read and processed by a human, which is cost-intense and slow.
 
 - **When Data is Shared with 3rd Parties, Privacy Requests Must be Too**.
-Yet collecting Privacy Requests in free text form makes it difficult to transfer them. Deezer does share data (according to its Privacy Policy and Consents), and can be subject to Privacy Requests that must be transferred to any data recipient according to [Article 19 of GDPR](https://gdpr-info.eu/art-19-gdpr/).
+  Yet collecting Privacy Requests in free text form makes it difficult to transfer them. Deezer does share data (according to its Privacy Policy and Consents), and can be subject to Privacy Requests that must be transferred to any data recipient according to [Article 19 of GDPR](https://gdpr-info.eu/art-19-gdpr/).
 
-## Using blidnet devkit
+## Using blindnet devkit
 
 It takes three easy steps for Deezer to include the most advanced privacy features in its existing software:
 
@@ -36,7 +37,7 @@ It takes three easy steps for Deezer to include the most advanced privacy featur
 
 Deezer should feed blidnet devkit with general information (Privacy Policy, server locations, retention policies) and provides a mapping between data categories in its database and [PRIV](https://github.com/blindnet-io/product-management/blob/main/refs/schemas/priv/RFC-PRIV.md) terms.
 
-blindnet's PRIV (Privacy Request Interchange Vocabulary) is an easy-to-use taxonomy of tags - an entry point to the a whole world of automation. It allows to connect an existing system with blindnet's knowledge base and rule engines in oder to deliver the ultimate privacy experience.
+blindnet's PRIV (Privacy Request Interchange Vocabulary) is an easy-to-use taxonomy of tags - an entry point to the whole world of automation. It allows to connect an existing system with blindnet's knowledge base and rule engines in order to deliver the ultimate privacy experience.
 
 ### Step 2 - Report key events
 
@@ -47,6 +48,7 @@ Whenever an important thing happens - a user opens an account, gives consent, cl
 When a user makes a Privacy Request, the Privacy Computation Engine is able to resolve it against that state and deliver response recommendations or automatically issue responses.
 
 ### Step 3 - Replace the current web form with Privacy Request Builder
+
 <img align="right" height="200" src="./img/loglolessPRbuilder.png">
 
 Finally, Deezer can replace the current text-field in the contact form, with a convenient interface (part of blindnet DevKit) allowing users to make Privacy Requests.
@@ -66,10 +68,10 @@ Complying with privacy regulation mandates becomes an opportunity to build trust
 
 ## Need more?
 
-blindnet DevKit does much more. It is a complete solution for [privacy-enabled connectedness](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/notion-of-privacy.md), allowing developers to quickly gain ground on all of the three pillars of privacy: [Transparency, Confidentiality and Control](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/principles/RFC-SPEP.md).
+blindnet DevKit does much more. It is a complete solution for [privacy-enabled connectedness](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/notion-of-privacy.md), allowing developers to quickly gain ground on all the three pillars of privacy: [Transparency, Confidentiality and Control](https://github.com/blindnet-io/product-management/blob/main/refs/notion-of-privacy/principles/RFC-SPEP.md).
 
-- *Working with sensitive data?* Offer end-to-end encryption using [blidnent's encryption services](https://github.com/blindnet-io/api-scala)
-- *Sharing Data with partners?* Propagate users' Privacy Requests using blindnet's [Privacy Request Multicast Protocol](https://github.com/blindnet-io/product-management/blob/b7d2bd0aab509a5d83ed42822b0ba19e27bef905/refs/schemas/protocols/RFC-PRMP.md)
+- _Working with sensitive data?_ Offer end-to-end encryption using [blidnent's encryption services](https://github.com/blindnet-io/api-scala)
+- _Sharing Data with partners?_ Propagate users' Privacy Requests using blindnet's [Privacy Request Multicast Protocol](https://github.com/blindnet-io/product-management/blob/b7d2bd0aab509a5d83ed42822b0ba19e27bef905/refs/schemas/protocols/RFC-PRMP.md)
 
 ## See also
 
